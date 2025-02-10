@@ -1,0 +1,90 @@
+.navbar-brand img {
+    width: 200px;
+    height: 62px;
+}
+.nav-link {
+    color: #ffff !important;
+    font-weight: 600;
+    font-size: inherit;
+    padding-right: 30px !important;
+    font-family: inherit;
+}
+.bg-body-tertiary {
+    background-color: #0000 !important;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; 
+    width: 0%;
+    height: 2px;
+    background-color: gold; 
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover::after {
+    width: 70%; 
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  
+@media (min-width: 200px) and (max-width: 576px) {
+    /* Styles for phones */
+    .nav-link {
+        font-size: 14px;       
+    }
+    .navbar-brand img {
+        width: 170px;
+        height: 45px;
+    }
+      
+      .nav-link::after {
+        display: none !important;
+      }
+      
+      .nav-link:hover::after {
+        display: none !important;
+      }
+
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* Styles for tablets */
+    .nav-link {
+        font-size: 14px;       
+    }
+    .nav-link::after {
+        display: none !important;
+      }
+      
+      .nav-link:hover::after {
+        display: none !important;
+      }
+   
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for laptops */
+    .nav-link::after {
+        display: none !important;
+      }
+      
+      .nav-link:hover::after {
+        display: none !important;
+      }
+    
+
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for desktops */
+    
+    
+  }
+        
