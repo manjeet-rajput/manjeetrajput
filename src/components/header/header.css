@@ -1,6 +1,12 @@
 .navbar-brand img {
-    width: 200px;
+    width: 100px;
     height: 62px;
+}
+.navbar{
+  width: 100% !important;
+  z-index: 99;
+  transition:top 0.5s ease-in-out;
+
 }
 .nav-link {
     color: #ffff !important;
@@ -41,10 +47,6 @@
     /* Styles for phones */
     .nav-link {
         font-size: 14px;       
-    }
-    .navbar-brand img {
-        width: 170px;
-        height: 45px;
     }
       
       .nav-link::after {
